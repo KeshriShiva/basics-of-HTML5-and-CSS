@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Monthly Calendar</title>
+    <link rel="stylesheet" href="CALL.css">
+</head>
+<body>
+    <div class="calendar-slideshow">
+        <div class="slideshow-container">
+            <div class="slide">
+                <table class="calendar">
+                    <thead>
+                        <tr>
+                            <th colspan="7" class="month-header">November 2023</th>
+                        </tr>
+                        <tr class="weekdays">
+                            <th class="sun">Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th class="sat">Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- November calendar content -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="slide">
+                <table class="calendar">
+                    <thead>
+                        <tr>
+                            <th colspan="7" class="month-header">December 2023</th>
+                        </tr>
+                        <tr class="weekdays">
+                            <th class="sun">Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th class="sat">Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- December calendar content -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="slide">
+                <table class="calendar">
+                    <thead>
+                        <tr>
+                            <th colspan="7" class="month-header">January 2024</th>
+                        </tr>
+                        <tr class="weekdays">
+                            <th class="sun">Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th class="sat">Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- January calendar content -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div id="events">
+        <h2>Events</h2>
+        <ul id="event-list">
+            <!-- Event list will be generated here using JavaScript -->
+        </ul>
+    </div>
+
+    <div class="event-form">
+        <h2>Add Event</h2>
+        <div class="event-tags">
+            <div class="event-tag red">Event</div>
+            <div class="event-tag blue">Activity</div>
+            <div class="event-tag green">Meeting</div>
+            <!-- Add more event tags as needed -->
+        </div>
+        <input type="date" id="event-date">
+        <input type="text" id="event-title" placeholder="Event Title">
+        <button id="add-event">Add</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
